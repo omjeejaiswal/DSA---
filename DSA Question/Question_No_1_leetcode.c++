@@ -36,7 +36,8 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
 
-        // soltion - 2
+        /*
+         // soltion - 2
         vector<int> ans;
         int n = nums.size();
         for (int i = 0; i < n; ++i) {
@@ -48,7 +49,11 @@ public:
                 }
             }
         }
-        return {}; // Return an empty vector if no solution is found
+        return {}; // Return an empty vector if no solution is found 
+        
+        */
+        
+
     }
 };
 
