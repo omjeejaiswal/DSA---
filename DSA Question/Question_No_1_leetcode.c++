@@ -51,7 +51,7 @@ public:
 
         */
 
-        /*
+        // /*
          // soltion - 2
         vector<int> ans;
         int n = nums.size();
@@ -66,7 +66,7 @@ public:
         }
         return {}; // Return an empty vector if no solution is found 
         
-        */
+        // */
         
 
     }
