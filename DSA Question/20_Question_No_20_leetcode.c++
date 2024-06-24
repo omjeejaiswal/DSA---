@@ -25,3 +25,55 @@
 
 // Input: s = "(]"
 // Output: false
+
+
+class Solution {
+public:
+    bool isValid(string s) {
+        /*
+        if(s.size() == 1)
+            return false;
+        
+        stack<char> st;
+        int i = 1;
+
+        st.push(s[0]);
+        if(st.top() == ']' || st.top() == ')' || st.top() == '}'){
+            return false;
+        }
+
+        while( i < s.size()) {
+            if(s[i] == '{' || s[i] == '[' || s[i] == '(') {
+                st.push(s[i]);
+            }
+
+            else if(!st.empty()) {
+                if(s[i] == '}' && st.top() == '{') {
+                    st.pop();
+                }
+
+                else if(s[i] == ')' && st.top() == '('){
+                    st.pop();
+                }
+
+                else if(s[i] == ']' && st.top() == '['){
+                    st.pop();
+                }
+                else{
+                    return false;
+                }
+            }
+            else {
+                return false;
+            }
+            i++;
+        }
+        if(st.empty()) 
+            return true;
+        
+        return false;
+        */
+
+        
+    }
+};
