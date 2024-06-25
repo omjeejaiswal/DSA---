@@ -32,16 +32,21 @@
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
+        // Initialize an empty string to store the common prefix
         string ans = "";
+        // Sort the array of strings lexicographically
         sort(strs.begin(), strs.end());
 
         int n = strs.size();
+         // Get the first and the last strings in the sorted array
         string first = strs[0], last = strs[n-1];
+
+         // Iterate through the characters of the first and last string
         for(int i = 0; i<min(first.size(), last.size()); i++) {
             if(first[i] != last[i]){
-                return ans;
+                return ans; // Return the common prefix found so far
             }
-            ans += first[i];
+            ans += first[i]; // Append the current character to the common prefix
         }
         return ans;
     }
