@@ -15,8 +15,6 @@ class node {
     }
 };
 
-
-
 node* buildTree(node* root) {
  
     cout << "Enter the data: " << endl;
