@@ -9,7 +9,7 @@ class node {
         node* right;
 
 
-    
+
     node(int d) {
         this -> data = d;
         this -> left = NULL;
