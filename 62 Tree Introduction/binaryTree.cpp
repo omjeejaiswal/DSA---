@@ -12,7 +12,7 @@ class node {
         this -> data = d;
         this -> left = NULL;
         this -> right = NULL;
-    } 
+    }
 };
 
 node* buildTree(node* root) {
