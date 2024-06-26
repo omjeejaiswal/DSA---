@@ -15,7 +15,7 @@ class node {
     }
 };
 
-.
+
 
 node* buildTree(node* root) {
  
