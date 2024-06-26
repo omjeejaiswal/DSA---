@@ -8,7 +8,6 @@ class node {
         node* left;
         node* right;
 
-
     node(int d) {
         this -> data = d;
         this -> left = NULL;
