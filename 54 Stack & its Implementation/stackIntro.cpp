@@ -16,6 +16,7 @@ class Stack {
         top = -1;
     }
 
+
     void push( int element) {
         if(size - top > 1) {
             top++;
