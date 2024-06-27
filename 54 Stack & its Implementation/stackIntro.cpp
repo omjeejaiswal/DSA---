@@ -6,6 +6,7 @@ class Stack {
     //properties
 
 
+
     
     public:
         int *arr;
