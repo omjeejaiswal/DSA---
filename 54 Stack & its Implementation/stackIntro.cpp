@@ -4,6 +4,7 @@ using namespace std;
 
 class Stack {
     //properties
+
     
     public:
         int *arr;
