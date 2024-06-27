@@ -18,6 +18,7 @@ class Stack {
 
     void push( int element) {
         if(size - top > 1) {
+            
             top++;
             arr[top] = element;
         }
