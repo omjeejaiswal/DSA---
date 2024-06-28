@@ -34,3 +34,67 @@
 
 
 
+class Solution {
+public:
+
+    bool binarySearch(vector<int>& nums, int target) {
+        // aproach -2
+    int n = nums.size(); //size of the array
+    int low = 0, high = n - 1;
+
+    // Perform the steps:
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (nums[mid] == target) return true;
+        else if (target > nums[mid]) low = mid + 1;
+        else high = mid - 1;
+    }
+    return false;
+}
+
+
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        /*
+        // t.c - O(n*m) , s.c - O(1)
+        int n = matrix.size(); // no of rows
+        int m = matrix[0].size(); // no of column
+
+        // traverse the matrxi
+        for(int i = 0; i<n; i++) {
+            for(int j = 0; j<m; j++) {
+                if(matrix[i][j] == target)
+                    return true;
+            }
+        }
+        return false;
+        */
+
+        /* 
+            Approach -2
+            int n = matrix.size(); // no of rows
+        int m = matrix[0].size(); // no of column
+
+        for(int i = 0; i<n; i++) {
+            if(matrix[i][0] <= target && target <= matrix[i][m-1]) {
+                return binarySearch(matrix[i], target);
+            }
+        }
+        return false;
+        */
+
+
+        int n = matrix.size(); // no of rows
+        int m = matrix[0].size(); // no of column
+
+        int low = 0, high = n*m-1;
+        while(low <= high){
+            int mid = (low + high) / 2;
+            int row = mid / m, col = mid%m;
+            if(matrix[row][col] == target) return true;
+            else if(matrix[row][col] < target) low = mid + 1;
+            else high = mid - 1;
+        }
+        return false;
+        
+    }
+};
